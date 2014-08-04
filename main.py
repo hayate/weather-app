@@ -17,7 +17,7 @@ class AddLocationForm(BoxLayout):
 
     def found_location(self, request, data):
         cities = ["{0}({1})".format(d['name'], d['sys'], ['country']) for d in data['list']]
-        print("\n".join(cities))
+        self.search_result.item_strings = cities
 
 
 class WeatherApp(App):
