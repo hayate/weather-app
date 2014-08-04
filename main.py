@@ -9,7 +9,7 @@ class AddLocationForm(BoxLayout):
     search_input = ObjectProperty()
 
     def search_location(self):
-        print("Explicit is better than implicit.")
+        print("The user searched for '{0}'".format(self.search_input.text))
 
 class WeatherApp(App):
     pass
